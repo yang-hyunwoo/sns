@@ -24,7 +24,7 @@ public class PostResponse {
 
     private Timestamp deletedAt;
 
-    public static PostResponse fromUser(Post post){
+    public static PostResponse fromPost(Post post){
         return new PostResponse(
                 post.getId(),
                 post.getTitle(),
