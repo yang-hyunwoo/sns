@@ -17,8 +17,8 @@ import java.time.Instant;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@SQLDelete(sql = "UPDATED \"user\" SET deleted_at = NOW() where id=?")
-@Where(clause = "deleted_at is null")
+@SQLDelete(sql = "UPDATE \"post\" SET deleted_at = NOW() where id=?")
+@Where(clause = "deleted_at is NULL")
 public class PostEntity {
 
     @Id
