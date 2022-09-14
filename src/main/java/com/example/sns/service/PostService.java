@@ -70,4 +70,10 @@ public class PostService {
     }
 
 
+    @Transactional
+    public void like(Integer postId , String userName) {
+
+    }
+
+
 }
